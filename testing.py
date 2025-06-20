@@ -8,7 +8,7 @@ class TestRoundSquare(unittest.TestCase):
         self.assertEqual(eq(2, 5 ,7), 5.851315793834051)
 
     def test_zero_number(self):
-        self.assertEqual(eq(0, 0 ,0), "ValueError: c can't be less than positive")
+        self.assertEqual(eq(0, 0 ,0), "ValueError:Parameter c must be greater than 0")
     
     def test_float_positive_number(self):
         self.assertEqual(eq(0.1, 0.2, 0.4), 0.7343194450616334)
